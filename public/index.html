@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body style="background-image: url(logo3.AVIF); ">
+
+  <div class="di1">
+    <h1 id="t1">Sign up to Fashion</h1>
+    <div class="di2">
+      <form id="registrationform" onsubmit="register(); return false;">
+        <div class="alert"></div>
+        <label id="l1"><b>Enter Name:</b></label><br>
+        <input id="name" class="in1" type="text" placeholder="....." /><br><br>
+
+        <label id="l1"><b>Enter Username:</b></label><br>
+        <input id="user" class="in1" type="text" placeholder="....." /><br><br>
+
+        <label id="l1" for="email"><b>Enter Email Id:</b></label><br>
+        <input id="email" class="in1" type="text" placeholder="....." /><br><br>
+
+        <label id="l1" for="psw"><b>Enter Password:</b></label><br>
+        <input id="psw" class="in1" type="password" placeholder="....." /><br><br>
+
+        <label>
+          <input type="checkbox" unchecked="unchecked" />
+          <b style="font-size: large; color: rgb(227, 169, 94);">
+            Creating an account means you're okay with our Terms of Service, Privacy Policy, and our default Notification Settings.
+          </b>
+        </label><br>
+
+        <input id="b1" type="submit" value="Create Account">
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

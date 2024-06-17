@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="web1.css">
+    <script>
+        
+        function register()
+{
+
+    console.log(document.getElementById("name").value);
+    console.log(document.getElementById("user").value);
+    console.log(document.getElementById("email").value);
+    console.log(document.getElementById("psw").value);
+    var Name=document.getElementById("name").value;
+    var Username=document.getElementById("user").value;
+    var Email=document.getElementById("email").value;
+    var Psw=document.getElementById("psw").value;
+
+    // var tes="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/";
+
+    if(Name=='')
+    {
+        alert("Name must be entered");
+        
+    }
+    else if(Username==null||Username=="")
+    {
+        alert("Userame must be entered");
+       
+    }
+    else if(Email==null|| Email == '')
+    {
+            alert("Enter valid Email Id");
+            
+    }
+    else if(Psw.length<8)
+    {
+        alert("Password must be more or equal to 8");
+        
+    }
+    else{
+        alert('Your account is registered');
+        
+    }
+    }
+
+    </script>
+</head>
+<body style="background-image: url(wall.WEBP);  fill-opacity: var(50%);">
+   
+    <div class="d1">
+        <img src="logo2.WEBP" alt="logo" width="100%" height="100%">
+    </div>
+    <div class="d2">
+        <h1 id="t1" >
+            Sign up to Fashion
+        </h1>
+        <div class="d3">
+            <!-- <form name="myform" method="post"  onsubmit="return register()"> -->
+            <label id="l1" >
+                <b>
+                  Enter  Name:
+                </b>
+            </label>
+            <br>
+            <input id="name" class="in1" type="text" placeholder="....." />
+            <br>
+            <br>
+            <label id="l1" >
+                <b>
+                  Enter  Userame: 
+                </b>
+            </label>
+            <br>
+            <input id="user" class="in1" type="text" placeholder="....." />
+            <br>
+            <br>
+            <label id="l1" for="email">
+                <b>
+                  Enter  Email Id:
+                </b>
+            </label>
+            <br>
+            <input id="email" class="in1" type="text" placeholder="....." />
+            <br>
+            <br>
+            <label id="l1" for="psw">
+                <b>
+                  Enter  Password:
+                </b>
+            </label>
+            <br>
+            <input id="psw" class="in1" type="password" placeholder="....." />
+            <br>
+            <br>
+            <label>
+                <input type="checkbox" unchecked="unchecked" > <b style="font-size: medium; color: white;">Creating an account means youre okay with our Terms of Service, Privacy Policy, and our default Notification Settings.
+                </b>
+            </label>
+            <br>
+            <!-- <button onclick=register() id="b1" type="button">Create account</button> -->
+            <input id="b1" type="submit" value="Create Account" onclick="register()">
+            
+        <!-- </form> -->
+           
+
+
+            
+
+
+        </div>
+        
+    </div>
+    
+    
+    
+     <!-- <div id="div1" style="width: 30pc; height: 100pc; background-color: pink;">   </div>
+     <h1>Sign up</h1>  -->
+
+     
+
+</body>
+</html>
