@@ -7,7 +7,6 @@ const cors = require('cors');
 
 const app = express();
 const port = process.env.PORT || 9001;
-
 app.use(cors());
 
 const db = mysql.createConnection({
@@ -28,10 +27,8 @@ db.connect((err) => {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static('public'));
-
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/fas.html');
+  res.sendFile(__dirname + '/fas.html');
 });
 
 app.post('/register', (req, res) => {
